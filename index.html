@@ -48,24 +48,14 @@
 <body>
 
   <div id="container">
-    <header>
-
-    </header>
-    <div id="main" role="main">
-
+    <header></header>
+    
+		<div id="main" role="main">
+			<h1>Mobile Boilerplate Lite</h1>
     </div>
 
-    <footer>
-
-    </footer>
-  </div> <!--! end of #container -->
-
-
-  <!-- JavaScript at the bottom for fast page loading -->
-
-  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+    <footer></footer>
+  </div> <!-- end of #container -->
 
   <!-- scripts concatenated and minified via ant build script -->
   <script src="js/helper.js"></script>
@@ -84,4 +74,13 @@
   </script>
 
 </body>
+<!-- load Zepto.js -->
+<script src="js/zepto.min.js"></script>
+
+<!-- use this version if you need fallback to Google's jQuery CDN -->
+<!-- <script>document.write('<script src=' + ('__proto__' in {} ? 'js/zepto' : '//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery') + '.min.js><\/script>')</script> -->
+
+<!-- uncomment to test Zepto -->
+<!-- <script>Zepto(function($) { alert('Zepto is working!') })</script> -->
+
 </html>
